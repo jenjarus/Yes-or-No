@@ -1,10 +1,10 @@
 "use strict";
 
-let nowYear = () => {
-    let date = new Date();
-    let span = document.querySelector('footer .year');
+const nowYear = () => {
+    const   date = new Date(),
+            dateBlock = document.querySelector('footer .year');
 
-    span.innerHTML = date.getFullYear();
+    dateBlock.innerHTML = date.getFullYear();
 };
 
 nowYear();

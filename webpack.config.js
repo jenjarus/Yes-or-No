@@ -1,7 +1,5 @@
 const path = require('path');
 const MiniCssExtractPlugin = require("mini-css-extract-plugin");
-const autoprefixer = require('autoprefixer');
-const webpack = require('webpack');
 
 module.exports = {
     entry: './src/app.js',
@@ -23,19 +21,9 @@ module.exports = {
             }
         ]
     },
-    /*mode: 'development',
-    devServer: {
-        historyApiFallback: true,
-        contentBase: path.resolve(__dirname, './dist'),
-        open: true,
-        compress: true,
-        hot: true,
-        port: 8080,
-    },*/
     plugins: [
         new MiniCssExtractPlugin({
             filename: 'style.css'
         }),
-        //new webpack.HotModuleReplacementPlugin()
     ]
 };
